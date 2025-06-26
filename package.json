@@ -4,13 +4,15 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "node app.js & electron ."
+    "dev": "node app.js & electron .",
+    "build": "npx electron-packager . collab-c-vite-app --platform=win32 --arch=x86 --out=dist --overwrite"
   },
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.7.2"
   },
   "devDependencies": {
-    "electron": "^29.0.0"
+    "electron": "^29.0.0",
+    "electron-package": "^0.1.0"
   }
 }
